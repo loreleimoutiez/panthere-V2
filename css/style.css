@@ -1,0 +1,91 @@
+html {
+    position: relative;
+    background-color: #ffffff;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem;
+}
+
+.page {
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    top: 0;
+    bottom: 0;
+    width: 16rem;
+}
+
+header {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-link a {
+    display: none;
+    color: #111827;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.sr-only {
+    display: none;
+}
+
+main {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+@media (min-width: 640px) {
+    nav {
+        height: 2.5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page {
+        width: 100%;
+        max-width: 42rem;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    header {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    .contact-link a {
+        display: block;
+        margin-left: 3rem;
+        margin-left: 3.5rem;
+    }
+}
